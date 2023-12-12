@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.api.networklib.model.Photos
 import com.example.thoughtprocessctlpoc.R
 import com.example.thoughtprocessctlpoc.databinding.DashboardFragmentBinding
-import com.example.thoughtprocessctlpoc.rootModule.entryModule.view.binding.DashboardGridListAdapter
-import com.example.thoughtprocessctlpoc.rootModule.entryModule.view.binding.DashboardListAdapter
+import com.example.thoughtprocessctlpoc.rootModule.entryModule.view.binding.viewAdapter.DashboardGridListAdapter
+import com.example.thoughtprocessctlpoc.rootModule.entryModule.view.binding.viewAdapter.DashboardListAdapter
 import com.example.thoughtprocessctlpoc.rootModule.entryModule.viewListener.IDashboardViewListener
 import com.example.thoughtprocessctlpoc.rootModule.entryModule.viewModel.ContentHeaderViewModel
 import com.example.thoughtprocessctlpoc.rootModule.entryModule.viewModel.DashBoardViewModel

@@ -1,4 +1,4 @@
-package com.example.thoughtprocessctlpoc.rootModule.entryModule.view.binding
+package com.example.thoughtprocessctlpoc.rootModule.entryModule.view.binding.viewAdapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,26 +10,25 @@ import android.widget.Filterable
 import androidx.annotation.Nullable
 import androidx.recyclerview.widget.RecyclerView
 import com.api.networklib.model.Photos
-import com.example.thoughtprocessctlpoc.databinding.DashboardUIBinding
-import com.example.thoughtprocessctlpoc.rootModule.entryModule.viewListener.IDashboardViewListener
+import com.example.thoughtprocessctlpoc.databinding.DashboardUIGridBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class DashboardListAdapter(
+class DashboardGridListAdapter(
     private val listOfDashboardModule: List<Photos?>,
     private val context: Context
 ) :
-    RecyclerView.Adapter<DashboardListAdapter.DashboardViewHolder>() , Filterable {
+    RecyclerView.Adapter<DashboardGridListAdapter.DashboardViewHolder>() , Filterable {
     var photoFilterList = listOf<Photos?>()
 
     init {
         photoFilterList = listOfDashboardModule
     }
     private var previousHolder: DashboardViewHolder? = null
-     var holdBinding: DashboardUIBinding?=null
+     var holdBinding: DashboardUIGridBinding?=null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DashboardViewHolder {
-        val binding: DashboardUIBinding =
-            DashboardUIBinding.inflate(LayoutInflater.from(parent.context))
+        val binding: DashboardUIGridBinding =
+            DashboardUIGridBinding.inflate(LayoutInflater.from(parent.context))
         holdBinding=binding
         return DashboardViewHolder(binding, binding.root)
 
@@ -48,11 +47,11 @@ class DashboardListAdapter(
         return photoFilterList.size
     }
 
-    class DashboardViewHolder(@Nullable val binding: DashboardUIBinding, view: View) :
+    class DashboardViewHolder(@Nullable val binding: DashboardUIGridBinding, view: View) :
         RecyclerView.ViewHolder(view) {
 
         fun bind(item: Photos, context: Context) {
-            binding.dashboardImageList = item
+            binding.dashboardGridImageList = item
             binding.executePendingBindings()
         }
     }
