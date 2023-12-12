@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ThoughtProcessCTLPOC</string>
+    <string name="dash_name">ThoughtProcess</string>
+    <string name="btnToggle">Grid</string>
+</resources>

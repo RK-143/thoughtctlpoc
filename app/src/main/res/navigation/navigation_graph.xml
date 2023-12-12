@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/DashboardFragment">
+
+
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.example.thoughtprocessctlpoc.rootModule.entryModule.view.fragments.DashboardFragment"
+        android:label="@string/dash_name"
+        tools:layout="@layout/dashboard_fragment">
+
+        <action
+            android:id="@+id/from_entry_to_NextFragmentTwo"
+            app:destination="@+id/EntryPointFragment2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/EntryPointFragment2"
+        android:name="com.example.thoughtprocessctlpoc.rootModule.entryModule.view.fragments.DashboardFragment"
+        android:label="@string/dash_name"
+        tools:layout="@layout/dashboard_fragment">
+
+    </fragment>
+</navigation>

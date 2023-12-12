@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="DashboardUIGridBinding">
+
+        <import type="com.example.thoughtprocessctlpoc.rootModule.entryModule.view.binding.ImageBindingAdapter" />
+
+        <variable
+            name="dashboardGridImageList"
+            type="com.api.networklib.model.Photos" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        android:layout_marginEnd="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/isGridView"
+            android:layout_width="107dp"
+            android:layout_height="135dp"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/imageviewgrid"
+                setImageUrl="@{dashboardGridImageList.url}"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/title_text_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="64dp"
+                android:text="@{dashboardGridImageList.title}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#DE000000"
+                app:layout_constraintTop_toBottomOf="@id/imageviewgrid"
+                app:layout_constraintStart_toStartOf="parent"
+                 />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/subtitle_text_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="@{dashboardGridImageList.id.toString()}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#8A000000" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
