@@ -27,7 +27,6 @@ Click the "ListView" button to switch to a list layout, which will also be retai
 Find the below snapshots for your reference.
 ![Screenshot_20231212_170733](https://github.com/RK-143/thoughtctlpoc/assets/29453716/5f3e0766-3bc2-43c5-9ce8-4433c20753ac)
 ![Screenshot_20231212_170813](https://github.com/RK-143/thoughtctlpoc/assets/29453716/e48ae914-004f-4700-9468-a4fdd2e2ba54)
-![Screenshot_20231212_172159](https://github.com/RK-143/thoughtctlpoc/assets/29453716/662ec11a-8a7b-4200-a89b-b38ee526c88b)
 ![Screenshot_20231212_172222](https://github.com/RK-143/thoughtctlpoc/assets/29453716/b6dbd82f-6f9f-4440-ad5c-36923ad97f9b)
 
 
