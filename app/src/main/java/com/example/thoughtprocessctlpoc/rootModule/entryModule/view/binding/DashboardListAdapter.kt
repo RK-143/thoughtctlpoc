@@ -36,7 +36,7 @@ class DashboardListAdapter(
     }
 
     override fun onBindViewHolder(holder: DashboardViewHolder, position: Int) {
-        val currentDashboardItem = listOfDashboardModule[position]
+        val currentDashboardItem = photoFilterList[position]
         previousHolder = holder
 
         currentDashboardItem?.let {

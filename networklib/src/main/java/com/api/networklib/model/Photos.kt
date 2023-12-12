@@ -9,6 +9,7 @@ data class Photos (
   @SerializedName("title"       ) var title       : String? = null,
   @SerializedName("user"        ) var user        : Int?    = null,
   @SerializedName("description" ) var description : String? = null,
-  @SerializedName("id"          ) var id          : Int?    = null
+  @SerializedName("id"          ) var id          : Int?    = null,
+  @SerializedName("date"          ) var dateTime          : String?    = null
 
 )

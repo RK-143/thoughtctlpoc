@@ -40,32 +40,36 @@
                 bind:contentHeaderModel="@{contentHeaderModel}" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/layout_recylcerview"
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/country_search"
+            onTextChange="@{dashboardViewModel}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:textCursorDrawable="@null"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
             android:layout_margin="@dimen/dimen8dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/llheaderLayout"
-            app:layout_constraintTop_toBottomOf="@+id/llheaderLayout">
+            app:layout_constraintTop_toBottomOf="@+id/llheaderLayout"
+            android:layout_marginBottom="@dimen/dimen5dp"/>
 
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/country_search"
-                onTextChange="@{dashboardViewModel}"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/teal_700"
-                android:textCursorDrawable="@null"
-                app:iconifiedByDefault="false"
-                app:queryBackground="@null" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/dashboardModulesRecyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:listitem="@layout/dasboard_list_adapter" />
-        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dashboardModulesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen15dp"
+            android:layout_marginBottom="@dimen/dimen15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_search"
+            app:layout_constraintVertical_bias="1.0"
+            tools:listitem="@layout/dasboard_list_adapter" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

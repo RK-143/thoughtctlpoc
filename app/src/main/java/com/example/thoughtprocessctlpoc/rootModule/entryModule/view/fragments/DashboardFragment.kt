@@ -53,7 +53,7 @@ class DashboardFragment : Fragment(), IDashboardViewListener {
             DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         )
         dashboardFragmentBinding?.dashboardModulesRecyclerView?.addItemDecoration(
-            GridSpacingItemDecoration(3, 25, false)
+            GridSpacingItemDecoration(3, 20, false)
         )
         isToggleGrid()
         observeTransactionList()
