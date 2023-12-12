@@ -1,25 +1,28 @@
-****About The Project****
+**Project Overview:**
 
-**Coding Language** :- KOTLIN Android
+**Programming Language:** Kotlin for Android development
 
-**Android Architecture**:-MVVM Architecture using LiveData and Databinding
+**Android Architecture**: MVVM Architecture incorporating LiveData and Data Binding
 
-**Content:-**
+**Project Highlights:**
 
-1.We have used MVVM architecture with solid principles and desing architecture.
+Implemented MVVM architecture with a focus on solid principles and design patterns.
 
-2.Created a sepereate network lib for common API calling.
+Developed a dedicated network library for streamlined API calls.
 
-3.We have used the retrofit for API calling getting image from server and dynamically set to the UI.
-4. We are displaying the IMGAE, USER ID, Titile , Day of Date
+Utilized Retrofit for API requests, fetching images from the server, and dynamically updating the UI.
 
-**Steps for paly around the application**
+Displayed key information such as image, user ID, title, and date.
 
-This POC is related to the recycler view. It has a button top of the screen this is callled switch the layout view. 
+**Exploring the Application:**
 
-1.Click on grid button it would be retain  grid layout.
+This proof of concept (POC) centers around the RecyclerView. At the top of the screen, there's a button to toggle between different layout views.
 
-2.Click on listview it would retain the list layout
+**Instructions:**
+
+Click the "Grid" button to switch to a grid layout, which will be retained.
+
+Click the "ListView" button to switch to a list layout, which will also be retained.
 
 Find the below snapshots for your reference.
 ![Screenshot_20231212_170733](https://github.com/RK-143/thoughtctlpoc/assets/29453716/5f3e0766-3bc2-43c5-9ce8-4433c20753ac)
