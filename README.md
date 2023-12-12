@@ -11,6 +11,7 @@
 2.Created a sepereate network lib for common API calling.
 
 3.We have used the retrofit for API calling getting image from server and dynamically set to the UI.
+4. We are displaying the IMGAE, USER ID, Titile , Day of Date
 
 **Steps for paly around the application**
 
