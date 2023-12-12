@@ -19,7 +19,9 @@ Find the below snapshots for your reference.
 ![Screenshot_20231212_172222](https://github.com/RK-143/thoughtctlpoc/assets/29453716/b6dbd82f-6f9f-4440-ad5c-36923ad97f9b)
 
 This POC is related to the recycler view. It has a button top of the screen this is callled switch the layout view. 
+
 1.Click on grid button it would be retain  grid layout.
+
 2.Click on listview it would retain the list layout
 
 
