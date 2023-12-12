@@ -31,6 +31,11 @@ Find the below snapshots for your reference.
 ![Screenshot_20231212_172222](https://github.com/RK-143/thoughtctlpoc/assets/29453716/b6dbd82f-6f9f-4440-ad5c-36923ad97f9b)
 
 
+**Video Demo: **
+
+
+
+https://github.com/RK-143/thoughtctlpoc/assets/29453716/aaba416a-bd51-4eb4-b8af-0b224c2ff6b2
 
 
 
